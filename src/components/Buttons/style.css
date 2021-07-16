@@ -1,0 +1,95 @@
+:root {
+    --white: #ffffff;
+    --white-100: #f3f3f3;
+  
+    --blue: #3f51b5;
+    --blue-100: #5264d4;
+    --blue-300: #303f9f;
+  
+    --gray: #e0e0e0;
+    --gray-300: #d5d5d5;
+    --gray-500: #9e9e9e;
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #000000;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: -175px auto 0;
+  
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search {
+    border: none;
+    color: var(--white);
+    background: var(--blue);
+    height: 30px;
+    width: 95px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .search:hover {
+    background: var(--blue-300);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .search:active {
+    background: var(--blue-100);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .clear {
+    color: #000000;
+    border: none;
+    background: var(--gray);
+    height: 30px;
+    width: 95px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .clear:hover {
+    background: var(--gray-300);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .clear:active {
+    background: var(--gray-500);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .exit {
+    border: none;
+    background: var(--white);
+    cursor: pointer;
+    position: absolute;
+    top: -17px;
+    left: 0px;
+  }
+  

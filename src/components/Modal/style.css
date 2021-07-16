@@ -1,0 +1,123 @@
+:root {
+    --white: #ffffff;
+    --white-100: #f3f3f3;
+  
+    --gray: #e0e0e0;
+    --gray-100: #ddd;
+    --gray-300: #d5d5d5;
+  }
+  
+  .overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+  }
+  
+  .modalContainer {
+    position: relative;
+    max-width: 600px;
+    max-height: 275px;
+    background: var(--white);
+    width: 100%;
+    height: 100%;
+    margin: 75px auto 0;
+  }
+  
+  .error {
+    max-height: 150px;
+  }
+  
+  .animateBottom {
+    position: relative;
+    animation: animateBottom 0.4s;
+  }
+  
+  @keyframes animateBottom {
+    from {
+      bottom: -300px;
+      opacity: 0;
+    }
+    to {
+      bottom: 0;
+      opacity: 1;
+    }
+  }
+  
+  .bounce {
+    animation-name: bounce;
+    animation-duration: 0.5s;
+    animation-delay: 0.25s;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateX(0px);
+      timing-function: ease-in;
+    }
+    37% {
+      transform: translateX(5px);
+      timing-function: ease-out;
+    }
+    55% {
+      transform: translateX(-5px);
+      timing-function: ease-in;
+    }
+    73% {
+      transform: translateX(4px);
+      timing-function: ease-out;
+    }
+    82% {
+      transform: translateX(-4px);
+      timing-function: ease-in;
+    }
+    91% {
+      transform: translateX(2px);
+      timing-function: ease-out;
+    }
+  }
+  .headerError {
+    background: #ff5352;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 45px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  .fipe {
+    border-collapse: collapse;
+  }
+  
+  .fipe td,
+  .fipe th {
+    border: 2px solid var(--gray-100);
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .fipe tr:nth-child(even) {
+    background-color: var(--white-100);
+  }
+  
+  .fipe tr:hover {
+    background: var(--gray-100);
+  }
+  
+  .fipe th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: var(--white-100);
+    width: 10%;
+  }
+  
