@@ -1,5 +1,7 @@
 # 07-introducao-ao-typescript-com-react
 
+**Project overview:**
+
 * O objetivo desse projeto era utilizar TypeScript no projeto passado;
 * O projeto imita uma tabela fipe, usando implementação com a API https://deividfortuna.github.io/fipe/;
 * Nesse projeto foi utilizado elevação de estado e componentes controlados;
